@@ -1,3 +1,36 @@
+"""
+Crypto Pair Trading Screener Dashboard
+
+This script creates a Streamlit dashboard to screen candlestick charts of cryptocurrencies
+and find the most promising LONG/SHORT pair trading setups. The dashboard utilizes the Binance
+API to fetch trading information and display the charts. It also provides funding rates
+visualization for the selected tokens.
+
+The script uses the following Python libraries:
+- os
+- time
+- datetime
+- dotenv
+- warnings
+- streamlit
+- pandas
+- plotly
+- arctic
+- binance.client
+
+The script imports utility functions from the 'dashboard_utils' module:
+- get_tv_chart
+- get_pair_funding
+- get_funding_chart
+
+This script should be run with the Streamlit CLI command:
+streamlit run <filename>.py
+
+Make sure to have a valid .env file with your Binance API Key and Secret.
+
+Author: 0xValerius
+"""
+
 import os
 import time
 from datetime import datetime, timedelta
@@ -67,7 +100,6 @@ with tokenA_chart_col:
 with tokenB_chart_col:
     tokenA_chart = get_tv_chart(tokenB,'USDT')
 
-
 ### Funding Rates Chart ###
 fundings = get_pair_funding(tokenA, tokenB, client)
 funding_chart = get_funding_chart(fundings)
@@ -79,7 +111,7 @@ st.markdown(
     '''
     <div style="text-align: center; margin-top:8%; margin-bottom:-90%; font-family: sans-serif">
         &#129302; Created by 
-        <a href="https://twitter.com/0xD0C97" style="text-decoration:none">0xDOC97</a> 
+        <a href="https://twitter.com/0xValerius_" style="text-decoration:none">0xValerius</a> 
         & 
         <a href="https://it.tradingview.com/u/Ray_Burst/" style="text-decoration:none">RayBurst</a> 
         &#129302;
