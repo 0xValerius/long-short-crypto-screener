@@ -1,5 +1,5 @@
 """
-Crypto Pair Trading Screener Dashboard
+LONG/SHORT Crypto Screener
 
 This script creates a Streamlit dashboard to screen candlestick charts of cryptocurrencies
 and find the most promising LONG/SHORT pair trading setups. The dashboard utilizes the Binance

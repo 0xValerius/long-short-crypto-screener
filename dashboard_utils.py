@@ -1,5 +1,5 @@
 """
-Dashboard Utility Functions
+LONG/SHORT Crypto Screener
 
 This module contains utility functions used by the main Streamlit dashboard script
 to fetch funding rates, create TradingView chart widgets, and plot funding rate charts.
