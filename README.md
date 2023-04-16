@@ -1,4 +1,4 @@
-# Delta Foundry
+# LONG/SHORT Crypto Screener
 
 A **Streamlit** dashboard to screen candlestick charts of cryptocurrencies and find the most promising LONG/SHORT pair trading setups. The dashboard utilizes the Binance API to fetch trading information and display the charts. It also provides funding rates visualization for the selected tokens.
 
