@@ -29,6 +29,6 @@ A **Streamlit** dashboard to screen candlestick charts of cryptocurrencies and f
 3. Commit your changes and push to your fork.
 4. Create a pull request, and wait for a review.
 
-## 📄 License
+## 📜 License
 
 [MIT](https://choosealicense.com/licenses/mit/)
